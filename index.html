@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
+
+
     <style>
-        
+
        /* .cd-timeline__content
         {
             height: 100px;
@@ -19,13 +19,13 @@
             -webkit-transition: height 0.5s;
             overflow: hidden
         }*/
-        
+
         body
         {
             background:hsl(206, 21%, 24%)
         }
 
-        
+
         button
         {
             background-color: inherit;
@@ -33,12 +33,12 @@
             height: inherit;
             width: inherit;
         }
-        
+
         .cd-timeline__content
         {
             overflow: overlay;
         }
-        
+
         .color-contrast-medium
         {
             height: auto;
@@ -47,7 +47,7 @@
             overflow: hidden;
             display: none;
         }
-        
+
         .cd-timeline__date
         {
             display: inline;
@@ -59,22 +59,22 @@
             overflow: visible;
             height: auto;
         }
-        
+
         .cd-timeline__content:hover > .color-contrast-medium
         {
             display: inherit;
         }
-        
+
         /*.cd-timeline
         {
             background:hsl(206, 21%, 24%)
         }*/
-        
+
     </style>
-    
-    
+
+
     <script>
-        
+
         function academic()
         {
             var elements = document.getElementsByClassName("academic");
@@ -92,7 +92,7 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
         function mathematical()
         {
             var elements = document.getElementsByClassName("mathematical");
@@ -110,7 +110,7 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
         function philosophical()
         {
            var elements = document.getElementsByClassName("philosophical");
@@ -128,7 +128,7 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
         function personal()
         {
            var elements = document.getElementsByClassName("personal");
@@ -146,29 +146,41 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
+
+
     </script>
-    
+
   <title>Online Bertrand Russell</title>
 </head>
 <body>
-    
-    
+  
+  <div class="hero-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(bertrand-header.jpg)">
+      <!-- <header class="cd-main-header flex flex-column flex-center" style="background-image: url(picture.jpeg)">
+        <h1>Bertrand Russell</h1>
+        <p class="margin-top-sm">1872 - 1970</p>
+      </header> -->
 
-    
-    <div class="header" style="background-image: url(picture.jpeg); background-repeat: no-repeat; background-size: cover">
-        
-        <header class="cd-main-header text-center flex flex-column flex-center" style="background-color: transparent">
-            <h1>Bertrand Russell</h1>
-            <p class="margin-top-sm">1872 - 1970</p>
-            <!--https://codyhouse.co/gem/vertical-timeline-->
-        </header>
-        <header style="color: white; padding: 1%; width: 50%">
-            <h6>Bertrand Russell (1872-1970) was an English philosopher best known as the co-author (with Alfred North Whitehead) of Principia Mathematica (3 vols., 1910-13), which established symbolic (or mathematical) logic in its current form, including the symbolism now used in mathematical and computer science applications. In philosophy Russell, along with G. E Moore, rejected the traditional Kantian-Hegelian speculative approach then dominant in England and developed what is now termed the “analytical approach”. This philosophy is  based on the analysis of complex propositions and theories into their component parts, and advocates (in the case of Russell in particular) a close association with formal logic and empirical science .
-             Russell was also a social critic, especially during World War I when he was imprisoned for his opposition to war and forced conscription, and during the Cold War, when he again served time for his opposition to nuclear weapons. He wrote extensively on social reform and justice, as well as addressing everyday problems of life in books directed at the general public. He combined a career as a leading academic with his avocation as a public intellectual, making his case through books, booklets and pamphlets, as well as radio, television and film. Russell won the Nobel Prize for literature (there is none for philosophy) in 1950, among numerous awards and honors. His output includes over 100 separate publications (books, booklets and pamphlets), thousands of articles and chapters, and over 50 hours of audio-visual material. 
-            </h6>
-        </header>  
-    
+    <div class="title">
+      Bertrand Russell<br>
+      <h4>1872-1970</h4>
+    </div>
+
+    <div class="header-descrip">
+      <h7>
+        Bertrand Russell (1872-1970) was an English philosopher best known as the co-author (with Alfred North Whitehead) of Principia Mathematica (3 vols., 1910-13),
+        which established symbolic (or mathematical) logic in its current form, including the symbolism now used in mathematical and computer science applications.
+        In philosophy Russell, along with G. E Moore, rejected the traditional Kantian-Hegelian speculative approach then dominant in England and developed what is now
+        termed the “analytical approach”. This philosophy is  based on the analysis of complex propositions and theories into their component parts, and advocates
+        (in the case of Russell in particular) a close association with formal logic and empirical science.
+      </h7>
+    </div>
+
+  </div> <!-- end of hero header -->
+
+  <div class="sticky-top">
+
     <div class="container" style="padding: 1%">
 
         <div class="row" style="border: 1px solid white; text-align: center; color: black;">
@@ -184,7 +196,7 @@
                 <button onclick="mathematical();" type="button">
                     <img src="assets/img/cd-icon-location.svg" alt="Movie" style="background-color: black">
                     <br>
-                    <p>Mathematical</p>   
+                    <p>Mathematical</p>
                 </button>
             </div>
             <div class="col" style="border: 1px solid white; background-color: gold">
@@ -206,25 +218,25 @@
 
 
         </div>
-    </div>
-    </div>
-    
-	
-    
-    
+      </div>
+    </div> <!-- end sticky top -->
+
+
+
+
   <section class="cd-timeline js-cd-timeline">
     <div class="container max-width-lg cd-timeline__container">
       <div class="cd-timeline__block academic" id="academic">
-          
+
         <div class="cd-timeline__img cd-timeline__img--movie">
           <img src="assets/img/cd-icon-location.svg" alt="Movie">
         </div> <!-- cd-timeline__img -->
-          
+
 
         <div class="cd-timeline__content text-component">
             <h2>Trinity Fellowship</h2>
             <p class="color-contrast-medium" style="height: over">Trinity offered him a five year fellowship in logic and the principles of mathematics, at a pay of 200 pounds a year, room in college and meals orivuded, for 24 lectures per term.</p>
-            
+
           <div class="flex justify-between items-center">
            <!-- <span class="cd-timeline__date">May 1910</span> -->
               <h6>May 1910</h6>
@@ -241,7 +253,7 @@
         <div class="cd-timeline__content text-component">
           <h2>Principia Mathematica, vol. 1</h2>
           <p class="color-contrast-medium">First volume of Principia Mathematica published, co-authored with his former mathematics professor, Alfred North Whitehead. The basic philosophical idea is thqt mathematics can be reduced to logic. The logic developed is that of sentential or propositional logic involving the basic connectives: negation, disjunction, conjunction, implication and equivalence; followed by predicate logic, containing the quantifiers “for all’ and “for some”, along with n-placed predicates standing for properties and relatins </p>
-          
+
           <div class="flex justify-between items-center">
             <h6>Dec 1910</h6>
             <a href="#0" class="btn btn--subtle">Read more</a>
@@ -269,7 +281,7 @@
           <div class="cd-timeline__img cd-timeline__img--picture">
           <img src="assets/img/cd-icon-location.svg" alt="Picture">
         </div> <!-- cd-timeline__img -->
-          
+
         <div class="cd-timeline__content text-component">
           <h2>Affair with Ottoliine Morrell</h2>
           <p class="color-contrast-medium">Russell and Ottoline Morrell begin their affair.  Morrell was herself married to Phillip Morrell, a Liberal Member of Parliament. Ottoline was a host for the Bloomsbury group of English authors, intellectuals and artists.  On  May 29  Russell’s separation from Alice was formalized (terms set). </p>
@@ -312,8 +324,8 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
+
+
         <div class="cd-timeline__block mathematical" id="mathematical">
         <div class="cd-timeline__img cd-timeline__img--movie" style="background-color: blue">
           <img src="assets/img/cd-icon-location.svg" alt="Movie">
@@ -329,7 +341,7 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
+
          <div class="cd-timeline__block personal" id="personal">
         <div class="cd-timeline__img cd-timeline__img--picture">
           <img src="assets/img/cd-icon-location.svg" alt="Picture">
@@ -345,9 +357,9 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-                
+
+
+
          <div class="cd-timeline__block mathematical" id="mathematical">
         <div class="cd-timeline__img cd-timeline__img--movie" style="background-color: blue">
           <img src="assets/img/cd-icon-location.svg" alt="Movie">
@@ -363,10 +375,10 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
+
+
+
+
          <div class="cd-timeline__block philosophical" id="philosophical">
         <div class="cd-timeline__img cd-timeline__img--location">
           <img src="assets/img/cd-icon-location.svg" alt="Location">
@@ -382,10 +394,10 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
+
+
+
+
          <div class="cd-timeline__block personal" id="personal">
         <div class="cd-timeline__img cd-timeline__img--picture">
           <img src="assets/img/cd-icon-location.svg" alt="Picture">
@@ -401,10 +413,10 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
+
+
+
+
          <div class="cd-timeline__block academic" id="academic">
         <div class="cd-timeline__img cd-timeline__img--movie">
           <img src="assets/img/cd-icon-location.svg" alt="Movie">
@@ -420,11 +432,11 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-        
-        
-                
+
+
+
+
+
          <div class="cd-timeline__block philosophical" id="philosophical">
         <div class="cd-timeline__img cd-timeline__img--location">
           <img src="assets/img/cd-icon-location.svg" alt="Location">
@@ -440,11 +452,11 @@
           </div>
         </div> <!-- cd-timeline__content -->
       </div> <!-- cd-timeline__block -->
-        
-        
-        
-        
-        
+
+
+
+
+
     </div>
   </section> <!-- cd-timeline -->
   <script src="assets/js/main.js"></script>
