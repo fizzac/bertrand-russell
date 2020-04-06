@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
+
+
     <style>
-        
+
        /* .cd-timeline__content
         {
             height: 100px;
@@ -19,13 +19,13 @@
             -webkit-transition: height 0.5s;
             overflow: hidden
         }*/
-        
+
         body
         {
             background:hsl(206, 21%, 24%)
         }
 
-        
+
         button
         {
             background-color: inherit;
@@ -33,12 +33,12 @@
             height: inherit;
             width: inherit;
         }
-        
+
         .cd-timeline__content
         {
             overflow: overlay;
         }
-        
+
         .color-contrast-medium
         {
             height: auto;
@@ -47,7 +47,7 @@
             overflow: hidden;
             display: none;
         }
-        
+
         .cd-timeline__date
         {
             display: inline;
@@ -59,22 +59,22 @@
             overflow: visible;
             height: auto;
         }
-        
+
         .cd-timeline__content:hover > .color-contrast-medium
         {
             display: inherit;
         }
-        
+
         /*.cd-timeline
         {
             background:hsl(206, 21%, 24%)
         }*/
-        
+
     </style>
-    
-    
+
+
     <script>
-        
+
         function academic()
         {
             var elements = document.getElementsByClassName("academic");
@@ -92,10 +92,10 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
-        function mathematical()
+
+        function political()
         {
-            var elements = document.getElementsByClassName("mathematical");
+            var elements = document.getElementsByClassName("political");
             var changeDisplay;
             if(elements[0].style.display == 'none')
                 {
@@ -110,10 +110,10 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
-        function philosophical()
+
+        function historical()
         {
-           var elements = document.getElementsByClassName("philosophical");
+           var elements = document.getElementsByClassName("historical");
             var changeDisplay;
             if(elements[0].style.display == 'none')
                 {
@@ -128,7 +128,7 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
         function personal()
         {
            var elements = document.getElementsByClassName("personal");
@@ -146,307 +146,222 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
+
+
     </script>
-    
+
   <title>Online Bertrand Russell</title>
 </head>
 <body>
-    
-    
 
-    
-    <div class="header" style="background-image: url(picture.jpeg); background-repeat: no-repeat; background-size: cover">
-        
-        <header class="cd-main-header text-center flex flex-column flex-center" style="background-color: transparent">
-            <h1>Bertrand Russell</h1>
-            <p class="margin-top-sm">1872 - 1970</p>
-            <!--https://codyhouse.co/gem/vertical-timeline-->
-        </header>
-        <header style="color: white; padding: 1%; width: 50%">
-            <h6>Bertrand Russell (1872-1970) was an English philosopher best known as the co-author (with Alfred North Whitehead) of Principia Mathematica (3 vols., 1910-13), which established symbolic (or mathematical) logic in its current form, including the symbolism now used in mathematical and computer science applications. In philosophy Russell, along with G. E Moore, rejected the traditional Kantian-Hegelian speculative approach then dominant in England and developed what is now termed the “analytical approach”. This philosophy is  based on the analysis of complex propositions and theories into their component parts, and advocates (in the case of Russell in particular) a close association with formal logic and empirical science .
-             Russell was also a social critic, especially during World War I when he was imprisoned for his opposition to war and forced conscription, and during the Cold War, when he again served time for his opposition to nuclear weapons. He wrote extensively on social reform and justice, as well as addressing everyday problems of life in books directed at the general public. He combined a career as a leading academic with his avocation as a public intellectual, making his case through books, booklets and pamphlets, as well as radio, television and film. Russell won the Nobel Prize for literature (there is none for philosophy) in 1950, among numerous awards and honors. His output includes over 100 separate publications (books, booklets and pamphlets), thousands of articles and chapters, and over 50 hours of audio-visual material. 
-            </h6>
-        </header>  
-    
-    <div class="container" style="padding: 1%">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><h4>Bertrand Russell</h4></a>
 
-        <div class="row" style="border: 1px solid white; text-align: center; color: black;">
-            <div class="col" style="border: 1px solid white; background-color: red">
-                <button onclick="academic();" type="button">
-                    <img src="assets/img/cd-icon-location.svg" alt="Movie" style="background-color: black">
-                    <br>
-                    <p>Academic</p>
-                </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-            </div>
-            <div class="col" style="border: 1px solid white; background-color: blue">
-                <button onclick="mathematical();" type="button">
-                    <img src="assets/img/cd-icon-location.svg" alt="Movie" style="background-color: black">
-                    <br>
-                    <p>Mathematical</p>   
-                </button>
-            </div>
-            <div class="col" style="border: 1px solid white; background-color: gold">
-                <button onclick="philosophical();" type="button">
-                    <img class="center" src="assets/img/cd-icon-location.svg" alt="Location" style="background-color: black">
-                    <br>
-                    <p>Philosophical</p>
-                </button>
-
-            </div>
-            <div class="col" style="border: 1px solid white; background-color: lawngreen">
-                <button onclick="personal();" type="button">
-                    <img src="assets/img/cd-icon-location.svg" alt="Picture" style="background-color: black">
-                    <br>
-                    <p>Personal</p>
-                </button>
-
-            </div>
-
-
+      <li class="nav-item">
+        <div class="col" style="padding: 10px; background-color: #FFC3C3">
+          Academic
+          <input type="checkbox" onclick="academic()" checked/>
         </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="col" style="padding: 10px; background-color: lightblue">
+          Political
+          <input type="checkbox" onclick="political()" checked/>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="col" style="padding: 10px; background-color: #FCD874">
+          Historical
+          <input type="checkbox" onclick="historical()" checked/>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <div class="col" style="padding: 10px; background-color: #A0FF9C">
+          Personal
+          <input type="checkbox" onclick="personal()" checked/>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select Date
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
     </div>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+  <div class="hero-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(bertrand-header.jpg)">
+      <!-- <header class="cd-main-header flex flex-column flex-center" style="background-image: url(picture.jpeg)">
+        <h1>Bertrand Russell</h1>
+        <p class="margin-top-sm">1872 - 1970</p>
+      </header> -->
+
+    <div class="title">
+      Bertrand Russell<br>
+      <h4>1872-1970</h4>
     </div>
-    
-	
-    
-    
+
+    <div class="header-descrip">
+      <h7>
+        Bertrand Russell (1872-1970) was an English philosopher best known as the co-author (with Alfred North Whitehead) of Principia Mathematica (3 vols., 1910-13),
+        which established symbolic (or mathematical) logic in its current form, including the symbolism now used in mathematical and computer science applications.
+        In philosophy Russell, along with G. E Moore, rejected the traditional Kantian-Hegelian speculative approach then dominant in England and developed what is now
+        termed the “analytical approach”. This philosophy is  based on the analysis of complex propositions and theories into their component parts, and advocates
+        (in the case of Russell in particular) a close association with formal logic and empirical science.
+      </h7>
+    </div>
+
+  </div> <!-- end of hero header -->
+
+
   <section class="cd-timeline js-cd-timeline">
     <div class="container max-width-lg cd-timeline__container">
-      <div class="cd-timeline__block academic" id="academic">
-          
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-location.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-          
 
-        <div class="cd-timeline__content text-component">
-            <h2>Trinity Fellowship</h2>
-            <p class="color-contrast-medium" style="height: over">Trinity offered him a five year fellowship in logic and the principles of mathematics, at a pay of 200 pounds a year, room in college and meals orivuded, for 24 lectures per term.</p>
-            
-          <div class="flex justify-between items-center">
-           <!-- <span class="cd-timeline__date">May 1910</span> -->
-              <h6>May 1910</h6>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block personal" id="personal">
+          <div class="cd-timeline__img cd-timeline__img--personal">
+            <h5>Aug 1792</h5>
+          </div> <!-- cd-timeline__img -->
 
-      <div class="cd-timeline__block mathematical" id="mathematical">
-        <div class="cd-timeline__img cd-timeline__img--movie" style="background-color: blue">
-          <img src="assets/img/cd-icon-location.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
+          <div class="cd-timeline__content text-component">
+            <h2>Birth of Russell’s paternal grandfather, John Russell</h2>
+            <p class="color-contrast-medium">Born into a wealthy, aristocratic English family
+              <img src="bertrand-header.jpg">
+            </p>
 
-        <div class="cd-timeline__content text-component">
-          <h2>Principia Mathematica, vol. 1</h2>
-          <p class="color-contrast-medium">First volume of Principia Mathematica published, co-authored with his former mathematics professor, Alfred North Whitehead. The basic philosophical idea is thqt mathematics can be reduced to logic. The logic developed is that of sentential or propositional logic involving the basic connectives: negation, disjunction, conjunction, implication and equivalence; followed by predicate logic, containing the quantifiers “for all’ and “for some”, along with n-placed predicates standing for properties and relatins </p>
-          
-          <div class="flex justify-between items-center">
-            <h6>Dec 1910</h6>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block philosophical" id="philosophical">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Philosophical Essays published</h2>
-          <p class="color-contrast-medium">Philosophical Essays published, a set of essays previously published in academic journals, including articles on ethics, mathematics, theories of truth, and criticism of pragmatism. The essay “The Free Man’s Worship” is later republished as a separate booklet in 1923. </p>
-
-          <div class="flex justify-between items-center">
-              <h6>Nov 1910</h6>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-location.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-          
-        <div class="cd-timeline__content text-component">
-          <h2>Affair with Ottoliine Morrell</h2>
-          <p class="color-contrast-medium">Russell and Ottoline Morrell begin their affair.  Morrell was herself married to Phillip Morrell, a Liberal Member of Parliament. Ottoline was a host for the Bloomsbury group of English authors, intellectuals and artists.  On  May 29  Russell’s separation from Alice was formalized (terms set). </p>
-
-          <div class="flex justify-between items-center">
-              <h6>19 Mar 1911</h6>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block personal" id="personal">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-location.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>meets Ludwig Wittgenstein</h2>
-          <p class="color-contrast-medium">Russell meets Ludwig Wittgenstein. Wittgenstein was from a wealthy Viennese family and had studied aeronautics, but came to Cambridge to study with Russell. He would write Tractatus Logico Philosophicus in partial support of Russell’s logical atomism, and after an absence from England to fight for Austria during the first World War, and teach school after its conclusion, he returned to Cambridge to develop a different philosophy, that of ordinary language philosophy. </p>
-
-          <div class="flex justify-between items-center">
-              <h6>18 Nov 1911</h6>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block philosophical" id="philosophical">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Problems of Philosophy</h2>
-          <p class="color-contrast-medium">The Problems of Philosophy published, for Home University Library (Gilbert Murray, publisher). Although Russell refers to as his “shilling shocker” (for its price), it sums up his views at the time, intended for a general audience.</p>
-
-          <div class="flex justify-between items-center">
-              <h6>Jan 1912</h6>
+            <div class="flex justify-between items-center">
+              <h6>Aug 18, 1792</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        <div class="cd-timeline__block mathematical" id="mathematical">
-        <div class="cd-timeline__img cd-timeline__img--movie" style="background-color: blue">
-          <img src="assets/img/cd-icon-location.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Principia Mathematica, vol. 2</h2>
-          <p class="color-contrast-medium">second volume of Principia Mathematica published. The “occasionally use proposition that 1 + 1 = 2” occurs on p. 88 of the 2nd edition (1927)</p>
 
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">1912</span>
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block academic" id="academic">
+          <div class="cd-timeline__img cd-timeline__img--academic">
+            <h5>1813</h5>
+          </div> <!-- cd-timeline__img -->
+
+          <div class="cd-timeline__content text-component">
+            <h2>Elected to House of Commons as Whig</h2>
+            <p class="color-contrast-medium">Russell attended Univ. of
+              Edinburgh, 1809-12 but did not take degree
+              <img src="bertrand-header.jpg">
+            </p>
+
+            <div class="flex justify-between items-center">
+              <h6>1813</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-         <div class="cd-timeline__block personal" id="personal">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-location.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Perplexities of John Forstice</h2>
-          <p class="color-contrast-medium">The Perplexeties of John Forstice, "written closely with Ottoline Morrell" completed in summer. This novel was not published at the timen, and appeared in the Collected Stories of Bertrand Russell in 1972.</p>
 
-          <div class="flex justify-between items-center">
-              <h6>1912</h6>
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block historical" id="historical">
+          <div class="cd-timeline__img cd-timeline__img--historical">
+            <h5>Aug 1792</h5>
+          </div> <!-- cd-timeline__img -->
+
+          <div class="cd-timeline__content text-component">
+            <h2>Whigs elected as government; Russell enters Cabinet</h2>
+            <p class="color-contrast-medium">Earl Grey as prime minister
+            </p>
+
+            <div class="flex justify-between items-center">
+              <h6>Dec 1910</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-                
-         <div class="cd-timeline__block mathematical" id="mathematical">
-        <div class="cd-timeline__img cd-timeline__img--movie" style="background-color: blue">
-          <img src="assets/img/cd-icon-location.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Principia Mathematica, vol. 3</h2>
-          <p class="color-contrast-medium">Third volume of Principia Mathematica published. There was to be a fourth volume on geometry, but this was not written, as the collaboration between Russell and Whitehead ended with the First World War, as Russell focused on his anti-war activities, and Whitehead disagreed, his son having been killed in battle </p>
 
-          <div class="flex justify-between items-center">
-              <h6>1913</h6>
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block historical" id="historical">
+          <div class="cd-timeline__img cd-timeline__img--historical">
+            <h5>Aug 1792</h5>
+          </div> <!-- cd-timeline__img -->
+
+          <div class="cd-timeline__content text-component">
+            <h2>Whigs elected as government; Russell enters Cabinet</h2>
+            <p class="color-contrast-medium">Earl Grey as prime minister
+            </p>
+
+            <div class="flex justify-between items-center">
+              <h6>Dec 1910</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
-         <div class="cd-timeline__block philosophical" id="philosophical">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Theory of Knowledge not published</h2>
-          <p class="color-contrast-medium">Russell decides not to publish Theory of Knowledge, after criticisms from Wittgenstein. Much has been written conjecturing as to the exact nature of Wittgenstein’s critique. The work subsequently appeared in the Collected Papers, vol. 13</p>
 
-          <div class="flex justify-between items-center">
-              <h6>1913</h6>
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block historical" id="historical">
+          <div class="cd-timeline__img cd-timeline__img--historical">
+            <h5>1832</h5>
+          </div> <!-- cd-timeline__img -->
+
+          <div class="cd-timeline__content text-component">
+            <h2>Active in Reform Act in Great Britain extending franchise</h2>
+            <p class="color-contrast-medium">1833: Slavery Abolition Act
+            </p>
+
+            <div class="flex justify-between items-center">
+              <h6>1832</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
-         <div class="cd-timeline__block personal" id="personal">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-location.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Meets Joseph Conrad</h2>
-          <p class="color-contrast-medium">Russell meets Joseph Conrad. Russell named one of his sons after Conrad. </p>
 
-          <div class="flex justify-between items-center">
-              <h6>10 Sep 1913</h6>
+    <!-- NEW EVENT -->
+        <div class="cd-timeline__block political" id="political">
+          <div class="cd-timeline__img cd-timeline__img--political">
+            <h5>Jul 1846</h5>
+          </div> <!-- cd-timeline__img -->
+
+          <div class="cd-timeline__content text-component">
+            <h2>Lord John Russell served as Prime Minister</h2>
+            <p class="color-contrast-medium">Head of Whig, later Liberal, Party
+            </p>
+
+            <div class="flex justify-between items-center">
+              <h6>July 1846 – Feb. 1852</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        
-                
-         <div class="cd-timeline__block academic" id="academic">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-location.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
+            </div>
+          </div> <!-- cd-timeline__content -->
+        </div> <!-- cd-timeline__block -->
 
-        <div class="cd-timeline__content text-component">
-          <h2>Rusell at Harvard</h2>
-          <p class="color-contrast-medium">Russell in the US, lecturing at Harvard for 600 pounds. (2nd trip to US). In preparation Russell wrote a series of papers, including one on mysticism and logic, sense data and physics. At Harvard, he delivered the Lowell lectures on "our knowledge of the external world", which were well attended. (March 16- April 9) Russell also gave a course in logic, and another on the theory of knowledge, as well as a weekly open house for tea and discussion, and grading of examination/theses. He meets as a student of his T. S. Elliott. After visits to New York, Bryn Mawr, Chicago, Baltimore and Princeton, Russell returned to England in June.</p>
-
-          <div class="flex justify-between items-center">
-              <h6>1914</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        
-        
-                
-         <div class="cd-timeline__block philosophical" id="philosophical">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Our Knowledge of the External World published</h2>
-          <p class="color-contrast-medium">Publication of Our Knowledge of the External World as a Field for Scientific Method in Philosophy published, based on the Lowell lectures at Harvard. </p>
-
-          <div class="flex justify-between items-center">
-              <h6>Aug 1914</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-        
-        
-        
-        
-        
     </div>
   </section> <!-- cd-timeline -->
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
