@@ -36,23 +36,22 @@
 
         .cd-timeline__content
         {
-            /*overflow: overlay;*/
-
             max-height: 200px;
           	overflow: hidden;
-
-          	/* Set our transitions up. */
-          	-webkit-transition: max-height 3s;
-          	-moz-transition: max-height 3s;
-          	transition: max-height 3s;
+          	/* smooth expand/collapse transition */
+          	transition: max-height 1.5s;
         }
 
         .color-contrast-medium
         {
-            transition: 3s;
-            -webkit-transition: max-height 3s;
             overflow: hidden;
-            display: none;
+            max-height:0px;
+            transition: max-height 1.5s;
+        }
+        .color-contrast-medium:hover
+        {
+            overflow: hidden;
+            max-height: 1000px;
         }
 
         .cd-timeline__date
@@ -64,14 +63,13 @@
         {
             background-color: lightgoldenrodyellow;
             overflow: hidden;
-            /*height: auto;*/
             max-height: 1000px;
-
         }
 
         .cd-timeline__content:hover > .color-contrast-medium
         {
             display: inherit;
+            overflow:hidden;
             max-height: 1000px;
         }
 
@@ -263,122 +261,6 @@
 
             <div class="flex justify-between items-center">
               <h6>May 18, 1872</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>Jun 1874</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>death of Russell's mother</h2>
-            <p class="color-contrast-medium">caused by diptheria. Add detail
-              <img src="bertrand-header.jpg">
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>June 28, 1874</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>Jul 1874</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>death of Russell’s sister</h2>
-            <p class="color-contrast-medium">death of Russell's sister Rachel, also of diptheriaj
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>July 3, 1874</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personla">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>Jan 1876</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>death of Russell’s father</h2>
-            <p class="color-contrast-medium">eath of Russell's father, of bronchitis. John Russell named as guardians two men known to be atheists - Cobden-Sanderson, Russell's god-father and D. A. Spalding, tutor to Frank. Spaldking, who suffered from tuberculosis, was found to have been intimate with Russell's mother, and the ensuing scandal led to the two children being placed with his grandparents (Feb. 1876). .2 These were Lord John Russell (1792-1878) and Lady Frances Elliot. Lord John had been prime minister of England (get dates); his lodgings - Pembroke House - were a gift from Queen Victoria.
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>January 9, 1876</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>May 1878</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>death of Russell’s grandfather</h2>
-            <p class="color-contrast-medium">death of grandfather, Lord John Russell. Russell was raised through childhood and youth by his grandmother, described as a Scottish Presbyterian by birth, a Puritan in morals and a Unitarian (at age 70) in religion
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>May 28, 1878</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>1878</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>Russell schooled at home</h2>
-            <p class="color-contrast-medium">Russell was schooled at home by hired educators, and kept a diary, coded in Greek, about his religious views and personal concerns.4 One of them, Mr. Ewen was interested in Marx and non-Euclidean geometry, and a defender of reason.5 Russell also met with the physicist Tyndall, a popularizer of science and scientific method.6
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>1878</h6>
-              <a href="#0" class="btn btn--subtle">Read more</a>
-            </div>
-          </div> <!-- cd-timeline__content -->
-        </div> <!-- cd-timeline__block -->
-
-
-
-    <!-- NEW EVENT -->
-        <div class="cd-timeline__block personal" id="personal">
-          <div class="cd-timeline__img cd-timeline__img--personal">
-            <h5>1889</h5>
-          </div> <!-- cd-timeline__img -->
-
-          <div class="cd-timeline__content text-component">
-            <h2>Met Allys Pearsall Smith</h2>
-            <p class="color-contrast-medium">Russell met Alyls Pearsall Smith during the summer, when her family, originally from the US, came to live nearby. Like her parents, she was a Quaker.9 She was five years older than Russell.
-            </p>
-
-            <div class="flex justify-between items-center">
-              <h6>1889</h6>
               <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
