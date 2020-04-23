@@ -49,23 +49,23 @@
         {
             display: inline;
         }
-        
-        
+
+
         .personal > .cd-timeline__content
         {
             background: rgba(157, 250, 155);
         }
-        
+
         .historical > .cd-timeline__content
         {
             background: #FCD874;
         }
-        
+
         .political > .cd-timeline__content
         {
             background: rgba(174, 215, 227);
         }
-        
+
         .academic > .cd-timeline__content
         {
             background: rgba(243, 189, 193);
@@ -73,13 +73,10 @@
 
         .publication > .cd-timeline__content
         {
-<<<<<<< HEAD
             background: rgba(175, 156, 242);
-=======
-            background-color: lightgoldenrodyellow;
             overflow: hidden;
             max-height: 1000px;
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
         }
 
         .cd-timeline__content:hover > .color-contrast-medium
@@ -88,18 +85,14 @@
             overflow:hidden;
             max-height: 1000px;
         }
-        
+
         .cd-timeline__content:hover
         {
             background-color: lightgoldenrodyellow;
             overflow: visible;
             height: auto;
         }
-        
-        
-        
-        
-        
+
 
     </style>
 
@@ -177,7 +170,7 @@
                     elements[i].style.display = changeDisplay;
                 }
         }
-        
+
         function publication()
         {
            var elements = document.getElementsByClassName("publication");
@@ -205,77 +198,72 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-      <div class="row">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#"><h4>Bertrand Russell</h4></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><h4>Bertrand Russell</h4></a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-       <div class="col">
-        <div class="row">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-      <li class="nav-item">
-        <div class="col" style="padding: 10px; background-color: #FFC3C3">
-          Academic
-          <input type="checkbox" onclick="academic()" checked/>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <div class="col" style="padding: 10px; background-color: lightblue">
-          Political
-          <input type="checkbox" onclick="political()" checked/>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <div class="col" style="padding: 10px; background-color: #FCD874">
-          Historical
-          <input type="checkbox" onclick="historical()" checked/>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <div class="col" style="padding: 10px; background-color: #A0FF9C">
-          Personal
-          <input type="checkbox" onclick="personal()" checked/>
-        </div>
-      </li>
-        
         <li class="nav-item">
-        <div class="col" style="padding: 10px; background-color: #AF9CF2">
-          Publications
-          <input type="checkbox" onclick="publication()" checked/>
+          <div class="col" style="padding: 10px; background-color: #FFC3C3">
+            Academic
+            <input type="checkbox" onclick="academic()" checked/>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="col" style="padding: 10px; background-color: lightblue">
+            Political
+            <input type="checkbox" onclick="political()" checked/>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="col" style="padding: 10px; background-color: #FCD874">
+            Historical
+            <input type="checkbox" onclick="historical()" checked/>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="col" style="padding: 10px; background-color: #A0FF9C">
+            Personal
+            <input type="checkbox" onclick="personal()" checked/>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="col" style="padding: 10px; background-color: #AF9CF2">
+            Personal
+            <input type="checkbox" onclick="publication()" checked/>
+          </div>
+        </li>
+
+
+      </ul>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Date
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
-      </li>
-            </div>
-           </div>
-
-    </ul>
-
-    <div class="btn-group col">
-      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Select Date
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
       </div>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-
-    <form class="form-inline my-2 my-lg-0 col">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-      </div>
-</nav>
+  </nav>
 
 
   <div class="hero-header" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 30%,
@@ -320,10 +308,7 @@
 
             <div class="flex justify-between items-center">
               <h6>May 18, 1872</h6>
-<<<<<<< HEAD
-=======
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -343,10 +328,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 28, 1874</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -365,10 +350,10 @@
 
             <div class="flex justify-between items-center">
               <h6>July 3, 1874</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -387,10 +372,10 @@
 
             <div class="flex justify-between items-center">
               <h6>January 9, 1876</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -409,10 +394,10 @@
 
             <div class="flex justify-between items-center">
               <h6>May 28, 1878</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -431,10 +416,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1878</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -454,10 +439,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1889</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -476,10 +461,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1890</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -498,10 +483,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1890</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -520,10 +505,10 @@
 
             <div class="flex justify-between items-center">
               <h6>February 27, 1891</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -542,10 +527,10 @@
 
             <div class="flex justify-between items-center">
               <h6>February 27, 1892</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -564,10 +549,10 @@
 
             <div class="flex justify-between items-center">
               <h6>May 18, 1893</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -586,10 +571,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 7, 1893</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -608,10 +593,10 @@
 
             <div class="flex justify-between items-center">
               <h6>July 1893</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -630,10 +615,10 @@
 
             <div class="flex justify-between items-center">
               <h6>September 1893</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -652,10 +637,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 8, 1894</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -674,10 +659,10 @@
 
             <div class="flex justify-between items-center">
               <h6>December 1889</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -696,10 +681,10 @@
 
             <div class="flex justify-between items-center">
               <h6>September 10, 1894</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -718,10 +703,10 @@
 
             <div class="flex justify-between items-center">
               <h6>December 13, 1894</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -740,10 +725,10 @@
 
             <div class="flex justify-between items-center">
               <h6>January 1895</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -762,10 +747,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1895</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -784,10 +769,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1895</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -806,10 +791,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1895</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -828,10 +813,10 @@
 
             <div class="flex justify-between items-center">
               <h6>November 1895</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -850,10 +835,10 @@
 
             <div class="flex justify-between items-center">
               <h6>February 6, 1896</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -872,10 +857,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 1896</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -894,10 +879,10 @@
 
             <div class="flex justify-between items-center">
               <h6>October 1896</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -916,10 +901,10 @@
 
             <div class="flex justify-between items-center">
               <h6>January 14, 1897</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -938,10 +923,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1897</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -960,10 +945,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1897</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -982,10 +967,10 @@
 
             <div class="flex justify-between items-center">
               <h6>March 1897</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1004,10 +989,10 @@
 
             <div class="flex justify-between items-center">
               <h6>January 17, 1898</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1025,12 +1010,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>January 1899</h6>
-=======
+
               <h6>1890</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1048,12 +1033,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>August 1, 1900</h6>
-=======
+
               <h6>1890</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1071,12 +1056,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>October 1900</h6>
-=======
+
               <h6>February 27, 1891</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1094,12 +1079,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>December 1900</h6>
-=======
+
               <h6>February 27, 1892</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1117,12 +1102,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>1901</h6>
-=======
+
               <h6>May 18, 1893</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1140,12 +1125,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>1901</h6>
-=======
+
               <h6>June 7, 1893</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1163,12 +1148,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>1901</h6>
-=======
+
               <h6>July 1893</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1186,12 +1171,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>February 10, 1901</h6>
-=======
+
               <h6>September 1893</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1209,9 +1194,9 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>January 1902</h6>
-=======
+
               <h6>June 8, 1894</h6>
               <div class="read_more">Read more</div>
             </div>
@@ -1233,7 +1218,7 @@
             <div class="flex justify-between items-center">
               <h6>December 1889</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1252,10 +1237,10 @@
 
             <div class="flex justify-between items-center">
               <h6>April 1902</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1274,10 +1259,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 16, 1902</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1296,10 +1281,10 @@
 
             <div class="flex justify-between items-center">
               <h6>June 16, 1902</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1318,10 +1303,10 @@
 
             <div class="flex justify-between items-center">
               <h6>July 8, 1902</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1340,10 +1325,10 @@
 
             <div class="flex justify-between items-center">
               <h6>May 1903</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1362,10 +1347,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1903</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1384,10 +1369,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1904</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1405,12 +1390,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>1905</h6>
-=======
+
               <h6>September 10, 1894</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1429,10 +1414,10 @@
 
             <div class="flex justify-between items-center">
               <h6>1906</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1450,12 +1435,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>February 1907</h6>
-=======
+
               <h6>December 13, 1894</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1474,10 +1459,10 @@
 
             <div class="flex justify-between items-center">
               <h6>May 1907</h6>
-<<<<<<< HEAD
-=======
+
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1495,12 +1480,12 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>May 21, 1908</h6>
-=======
+
               <h6>January 1895</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -1518,9 +1503,9 @@
             </p>
 
             <div class="flex justify-between items-center">
-<<<<<<< HEAD
+
               <h6>1908</h6>
-=======
+
               <h6>1895</h6>
               <div class="read_more">Read more</div>
             </div>
@@ -1542,7 +1527,7 @@
             <div class="flex justify-between items-center">
               <h6>1895</h6>
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -2188,12 +2173,12 @@
 
             <div class="flex justify-between items-center">
               <h6>October 18, 1909</h6>
-<<<<<<< HEAD
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2202,7 +2187,7 @@
 
           <div class="cd-timeline__content text-component">
             <h2>Problems of Philosophy </h2>
-            <p class="color-contrast-medium">Book: philosophy, theory         
+            <p class="color-contrast-medium">Book: philosophy, theory
             </p>
 
             <div class="flex justify-between items-center">
@@ -2211,8 +2196,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-    
+
+
         <!-- NEW EVENT -->
         <div class="cd-timeline__block historical" id="historical">
           <div class="cd-timeline__img cd-timeline__img--historical">
@@ -2229,8 +2214,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2248,8 +2233,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block historical" id="historical">
           <div class="cd-timeline__img cd-timeline__img--historical">
@@ -2258,7 +2243,7 @@
 
           <div class="cd-timeline__content text-component">
             <h2>Conscription introduced</h2>
-            <p class="color-contrast-medium">conscription introduced. 
+            <p class="color-contrast-medium">conscription introduced.
             </p>
 
             <div class="flex justify-between items-center">
@@ -2266,8 +2251,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2285,8 +2270,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2304,8 +2289,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2323,8 +2308,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2342,8 +2327,8 @@
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2355,15 +2340,15 @@
             <p class="color-contrast-medium">Pamphlet: political, ideas
             <img src="BR_1952_WhatIsFreedom.jpg">
               </p>
-              
+
             <div class="flex justify-between items-center">
               <h6>1952</h6>
                 <a href="http://bertie.ccsu.edu/" class="btn btn--subtle" target="_blank">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2379,12 +2364,12 @@
             <p class="color-contrast-medium">Pamphlet: political, ideas
             <img src="BR_1952_WhatIsFreedom.jpg">
               </p>
-              
-            
+
+
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
-        
-        
+
+
     <!-- NEW EVENT -->
         <div class="cd-timeline__block publication" id="publication">
           <div class="cd-timeline__img cd-timeline__img--publication">
@@ -2396,12 +2381,12 @@
             <p class="color-contrast-medium">Pamphlet: political, ideas
             <img src="BR_1953_WhatIsDemocracy.jpg">
               </p>
-              
+
             <div class="flex justify-between items-center">
               <h6>1953</h6>
-=======
+
               <div class="read_more">Read more</div>
->>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
+
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
