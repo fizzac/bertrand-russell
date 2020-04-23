@@ -1,17 +1,8 @@
-# Responsive Vertical Timeline
+# Bertrand Russell Timeline
 
-An easy to customize, responsive timeline.
-
-[Article on CodyHouse](https://codyhouse.co/gem/vertical-timeline)
-
-[Demo](https://codyhouse.co/demo/vertical-timeline)
- 
-[License](https://codyhouse.co/license)
-
-## Dependencies
-
-This experiment is built upon the [CodyHouse Framework](https://github.com/CodyHouse/codyhouse-framework).
+This is a 5 dimensional timeline of Bertrand Russell's very exciting life.
+Visit the webpage here: http://161.35.3.197/
 
 ## Credits
 
-Icons: [Nucleo Library](https://nucleoapp.com/)
+Original template from https://github.com/CodyHouse/vertical-timeline
