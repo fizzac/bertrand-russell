@@ -2,7 +2,7 @@
 *,
 *::after,
 *::before {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 * {
@@ -140,7 +140,6 @@ select {
     margin: 0
 }
 
-.btn,
 .form-control,
 .link,
 .reset {
@@ -153,6 +152,18 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
+}
+
+.btn  {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 select.form-control::-ms-expand {
@@ -453,8 +464,7 @@ h3,
 h4 {
     color: hsl(240, 8%, 12%);
     color: var(--color-contrast-higher, #1c1c21);
-    line-height: 1.2;
-    line-height: var(--heading-line-height, 1.2)
+    line-height: 1;
 }
 
 .text-xxxl {
@@ -470,7 +480,7 @@ h1,
 
 h2,
 .text-xl {
-    font-size: 1.728em;
+    font-size: 1em;
     font-size: var(--text-xl, 1.728em);
     color:white;
 }
@@ -784,7 +794,7 @@ u,
     background-color: hsl(240, 1%, 83%);
     background-color: var(--color-contrast-low, #d3d3d4);
     color: hsl(240, 8%, 12%);
-    color: var(--color-contrast-higher, #1c1c21)
+    color: var(--color-contrast-higher, #1c1c21);
 }
 
 .btn--accent {
@@ -2848,7 +2858,7 @@ mark {
     --color-shadow: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.15);
     box-shadow: 0 4px 16px hsla(240, 8%, 12%, 0.15);
     box-shadow: 0 4px 16px hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.15);
-    cursor: pointer
+    cursor: pointer;
 }
 
 .btn--primary {
@@ -2988,7 +2998,7 @@ mark {
 .cd-timeline__container {
     position: relative;
     padding: 1.25em 0;
-    padding: var(--space-md) 0
+    padding: var(--space-md) 0;
 }
 
 .cd-timeline__container::before {
@@ -2998,8 +3008,8 @@ mark {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: hsl(205, 38%, 89%);
-    background: var(--cd-color-2)
+    /* TIMELINE LINE COLOR */
+    background-color:#ebebeb;
 }
 
 @media (min-width: 64rem) {
@@ -3123,7 +3133,10 @@ mark {
     border: 7px solid transparent;
     border-right-color: hsl(0, 0%, 100%);
     border-right-color: var(--color-white);
+<<<<<<< HEAD
     shape-inside: circle()
+=======
+>>>>>>> e720c4459114e74d945e4edf9a2edf4041a7dc47
 }
 
 .cd-timeline__content h2 {
@@ -3324,8 +3337,8 @@ mark {
 
 .title {
   color:white;
-  font-size: 4.5em;
-  font-family:"Georgia";
+  font-size: 4.8em;
+  font-family:Verdana, Geneva, sans-serif;
   text-align: center;
   position: absolute;
   top: 42%;
@@ -3335,7 +3348,7 @@ mark {
 }
 
 .header-descrip {
-  background: rgba(1, 1, 1, 0.6);
+  background: rgba(1, 1, 1, 0.8);
   position:absolute;
   bottom:6%;
   left:10%;
@@ -3346,4 +3359,14 @@ mark {
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   color:white;
+}
+
+/* replaced "<a href="#0"
+class="btn btn--subtle">Read more</a>" with this */
+.read_more{
+  color:gray;
+  font-size: 1em;
+}
+.cd-timeline__content:hover .read_more {
+  display:none;
 }
