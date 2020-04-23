@@ -3092,6 +3092,10 @@ mark {
     background-color: #FCD874;
 }
 
+.cd-timeline__img--publication {
+    background-color: #AF9CF2;
+}
+
 .cd-timeline__content {
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -3105,7 +3109,8 @@ mark {
     padding: 1.25em;
     padding: var(--space-md);
     box-shadow: 0 3px 0 hsl(205, 38%, 89%);
-    box-shadow: 0 3px 0 var(--cd-color-2)
+    box-shadow: 0 3px 0 var(--cd-color-2);
+    border-radius: 25px;
 }
 
 .cd-timeline__content::before {
@@ -3117,7 +3122,8 @@ mark {
     height: 0;
     border: 7px solid transparent;
     border-right-color: hsl(0, 0%, 100%);
-    border-right-color: var(--color-white)
+    border-right-color: var(--color-white);
+    shape-inside: circle()
 }
 
 .cd-timeline__content h2 {
